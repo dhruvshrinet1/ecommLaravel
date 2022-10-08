@@ -1,12 +1,18 @@
 @extends('master')
 
 @section('content')
-<div class="form-floating mb-3">
-    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-    <label for="floatingInput">Email address</label>
-  </div>
-  <div class="form-floating">
-    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-    <label for="floatingPassword">Password</label>
-  </div>
+<form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default-dark">Submit</button>
+  </form>
 @endsection
